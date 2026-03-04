@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Kelompok 3</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background: linear-gradient(to bottom, #72c8fa, #c4eafb, #e0f8ce, #90d470); color: #1a4a5e; min-height: 100vh; display: flex; flex-direction: column; }
+        
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.8); display: flex; justify-content: space-between; padding: 15px 50px; z-index: 1000; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #0078d7; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { text-decoration: none; color: #005a9e; font-weight: 600; padding: 8px 16px; border-radius: 20px; transition: 0.3s; }
+        .nav-links a:hover, .nav-links a.active { background: white; color: #0078d7; }
+
+        main { flex: 1; margin-top: 80px; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+        .contact-container { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; max-width: 1000px; width: 100%; }
+        
+        .info-panel, .map-panel { 
+            background: rgba(255,255,255,0.6); 
+            backdrop-filter: blur(10px); 
+            padding: 30px; 
+            border-radius: 20px; 
+            border: 1px solid white; 
+            flex: 1; 
+            min-width: 300px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            overflow: hidden; /* Added to ensure nothing spills out */
+        }
+
+        h1, h2 { color: #005a9e; margin-bottom: 20px; }
+
+        .map-image { 
+            width: 100%; 
+            height: 250px; 
+            border-radius: 10px; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        footer { text-align: center; padding: 20px; background: rgba(255,255,255,0.5); font-weight: bold; color: #005a9e; margin-top: auto; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Kelompok 3</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="galleries.html">Galleries</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 style="font-size: 2.5rem; text-shadow: 2px 2px white; margin-bottom: 40px;">Hubungi Tim Kami</h1>
+        
+        <div class="contact-container">
+            <div class="info-panel">
+                <h2>Alamat Markas Tim</h2>
+                <p><strong>SMAN 45 JAKARTA</strong></p>
+                <p>Jl. Perintis Kemerdekaan, Kelapa Gading, DKI Jakarta, Indonesia.</p>
+                <br>
+                <p><strong>Email:</strong> roughcrete@gmail.com</p>
+                <p><strong>Jam Kerja:</strong> Senin - Jumat (06:30 - 15:00 WIB)</p>
+            </div>
+
+            <div class="map-panel">
+                <h2>Peta Lokasi</h2>
+                <img class="map-image" src="https://lh3.googleusercontent.com/d/1LlVwxBQHOdLc5O0d-zHNrKrESPFrkx8w" alt="Peta Lokasi SMAN 45 Jakarta" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <footer>© 2026 Kelompok 3 | Infor 4</footer>
+</body>
+</html>
